@@ -1,14 +1,7 @@
 
-# 3D-Scene Microservices
+# 3D-Scene Identity Service
 
-An app that serves API from multiple services
-
-# Services
-
-  - Authentication
-  - Identity
-  - Dashboard
-  - Gateway
+An API that handles user identity.
 
 # Documentation
 
