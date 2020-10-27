@@ -15,7 +15,6 @@ class DashboardController {
    */
   static async getDashboardData(req, res) {
     try {
-      const { id } = req.params;
       const dashboardData = await db.dashboard.list();
       console.log('DashboardController -> getDashboardData -> dashboardData', dashboardData);
       if (!dashboardData) return responseUtil(res, 404, 'failure', 'dashboardData not found');

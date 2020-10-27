@@ -1,10 +1,14 @@
 import GatewayController from '../controllers/gatewayController';
 
-const { signUpUser, logUserIn, getUser } = GatewayController;
+const {
+  signUpUser, logUserIn, getUser, getDashboard, getShape
+} = GatewayController;
 
 const Query = {
   user: logUserIn,
-  showUser: getUser
+  showUser: getUser,
+  getDashboard,
+  getShape
 };
 
 const Mutation = {

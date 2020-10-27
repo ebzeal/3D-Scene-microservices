@@ -1,6 +1,8 @@
 type Query {
   user(logInDetails:LogInDetails): String
   showUser(id:ID!): User
+  getDashboard: Dashboard
+  getShape(shapeName:String): Shape
 }
 
 type Mutation {
@@ -15,8 +17,20 @@ type User {
   fullName: String!
 }
 
+type Dashboard {
+ views:  String
+clicks: String
+objects: String
+animated: String
+}
 
-
+type Shape {
+  id: String
+  name: String
+  geopoints: String
+  texture: String
+  speed: String
+}
 
 input CreateUserInput { 
   email: String!

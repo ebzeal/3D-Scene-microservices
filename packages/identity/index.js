@@ -17,5 +17,5 @@ const port = process.env.PORT || 3500;
 app.use('/api/v1', routes);
 
 app.listen(port, () => {
-  console.log(`Server started on port ${port}`);
+  console.log(`Identity Service started on port ${port}`);
 });
