@@ -1,12 +1,9 @@
-// import UserService from '../services/users.services';
+const Query = {
+  user: () => { 'userId'; }
+};
 
-// const { createUser, getUser } = UserService;
-// const Query = {
-//   user: getUser
-// };
+const Mutation = {
+  createUser: () => { 'userId'; }
+};
 
-// const Mutation = {
-//   createUser
-// };
-
-// module.exports = { Query, Mutation };
+module.exports = { Query, Mutation };
