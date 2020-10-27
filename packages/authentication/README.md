@@ -1,7 +1,7 @@
 
-# 3D-Scene Gateway Service
+# 3D-Scene Authentication Service
 
-An API that sits between the client and multiple services
+An API that handles user authntication and Identity
 
 # Documentation
 

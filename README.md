@@ -1,7 +1,7 @@
 
-# 3D-Scene Gateway Service
+# 3D-Scene Microservices
 
-An API that sits between the client and multiple services
+An app that serves API from multiple services
 
 # Documentation
 
