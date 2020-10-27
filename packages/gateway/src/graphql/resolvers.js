@@ -1,9 +1,14 @@
+import GatewayController from '../controllers/gatewayController';
+
+const { signUpUser, logUserIn, getUser } = GatewayController;
+
 const Query = {
-  user: () => { 'userId'; }
+  user: logUserIn,
+  showUser: getUser
 };
 
 const Mutation = {
-  createUser: () => { 'userId'; }
+  createUser: signUpUser
 };
 
 module.exports = { Query, Mutation };

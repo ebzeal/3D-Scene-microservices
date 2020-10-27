@@ -1,5 +1,6 @@
 type Query {
   user(logInDetails:LogInDetails): String
+  showUser(id:ID!): User
 }
 
 type Mutation {
