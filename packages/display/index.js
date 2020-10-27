@@ -12,11 +12,10 @@ app.use(express.urlencoded({ extended: true }));
 
 env.config();
 
-const port = process.env.PORT || 4000;
+const port = process.env.PORT || 4200;
 
 app.use('/api/v1', routes);
 
 app.listen(port, () => {
-  // eslint-disable-next-line no-console
-  console.log(`Dashboard Service started on port ${port}`);
+  console.log(`Display Service started on port ${port}`);
 });
