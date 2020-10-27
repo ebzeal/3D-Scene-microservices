@@ -1,7 +1,7 @@
 
-# 3D-Scene Authentication Service
+# 3D-Scene Identity Service
 
-An API that handles user authentication.
+An API that handles user identity.
 
 # Documentation
 

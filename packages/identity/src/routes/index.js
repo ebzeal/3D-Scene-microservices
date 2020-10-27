@@ -1,5 +1,5 @@
 import { Router } from 'express';
-import authRoutes from './auth';
+import identityRoutes from './identity';
 
 const route = Router();
 
@@ -7,6 +7,6 @@ route.get('/', (req, res) => {
   res.status(200).json('DB loaded');
 });
 
-route.use(authRoutes);
+route.use(identityRoutes);
 
 export default route;

@@ -12,15 +12,14 @@ const secret = process.env.JWT_SECRET;
 class tokenHelp {
   /**
    *
-   * @description Encodes a passed token and returns a jwt token
+   * @description Verifies a passed token and returns a decoded payload
    * @static
-   * @param {*} payload
-   * @param {string} [ttl='2h']
-   * @returns {string} Jwt token
+   * @param {string} token
+   * @returns {object} Payload
    * @memberof Tokenize
    */
-  static sign(payload, ttl = '2h') {
-    return jwt.sign(payload, secret, { expiresIn: ttl });
+  static verify(token) {
+    return jwt.verify(token, secret);
   }
 }
 

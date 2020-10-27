@@ -1,0 +1,22 @@
+[
+  {
+    "id": "B1-A4-S_v",
+    "password": "olu1234",
+    "email": "ebzeal@yahoo.com",
+    "userName": "olu"
+  },
+  {
+    "id": "HJKepzrdP",
+    "password": "$argon2i$v=19$m=4096,t=3,p=1$T7SUprAp4gEy++kd09NWlQ$Vje4Zc53k0DjTrv8TFTuEW/SBn4qHIG1vAjtT/wlh2U",
+    "email": "ebzeald@yahoo.com",
+    "userName": "olud",
+    "fullName": "Olusola E"
+  },
+  {
+    "id": "SJx-ZmH_P",
+    "password": "$argon2i$v=19$m=4096,t=3,p=1$2KFNf2gBoaLCjbIZgLGHlQ$uVhct+fmaRZL8eioZijbScc0qMZ8ZdDQdHznEuqHPgk",
+    "email": "ebzealde@yahoo.com",
+    "userName": "olude",
+    "fullName": "Olusola E"
+  }
+]
