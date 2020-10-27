@@ -1,0 +1,6 @@
+node_modules
+dist
+*.snap
+src/__snapshots__/
+.DS_Store
+

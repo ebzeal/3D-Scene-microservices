@@ -17,7 +17,6 @@ class IdentityController {
     try {
       const { id } = req.params;
       const user = await db.users.get(id);
-      console.log('IdentityController -> fetchUser -> user', user);
       if (!user) return responseUtil(res, 404, 'failure', 'User not found');
       return responseUtil(res, 200, 'success', 'User found', user);
     } catch (error) {

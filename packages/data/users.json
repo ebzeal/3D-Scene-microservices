@@ -1,43 +1,9 @@
 [
   {
-    "id": "B1-A4-S_v",
-    "password": "olu1234",
+    "id": "ByBUGor_v",
+    "password": "$argon2i$v=19$m=4096,t=3,p=1$MbK8A4eaC8CRz/iSAy1pjg$e1Usa3U+18M5Z9kcT7PTg++MbZ2pAWt0dpBxVD3s0jo",
     "email": "ebzeal@yahoo.com",
-    "userName": "olu"
-  },
-  {
-    "id": "HJKepzrdP",
-    "password": "$argon2i$v=19$m=4096,t=3,p=1$T7SUprAp4gEy++kd09NWlQ$Vje4Zc53k0DjTrv8TFTuEW/SBn4qHIG1vAjtT/wlh2U",
-    "email": "ebzeald@yahoo.com",
-    "userName": "olud",
-    "fullName": "Olusola E"
-  },
-  {
-    "id": "SJx-ZmH_P",
-    "password": "$argon2i$v=19$m=4096,t=3,p=1$2KFNf2gBoaLCjbIZgLGHlQ$uVhct+fmaRZL8eioZijbScc0qMZ8ZdDQdHznEuqHPgk",
-    "email": "ebzealde@yahoo.com",
-    "userName": "olude",
-    "fullName": "Olusola E"
-  },
-  {
-    "id": "SyYItNHdw",
-    "password": "$argon2i$v=19$m=4096,t=3,p=1$w3u0iQJUkHxndKTI5d1quQ$K5YET9xObChz4pL7lAvR9xnLh3EzZDv67/WR2jJvSI4",
-    "email": "ebzealg@yahoo.com",
-    "userName": "oluEe",
-    "fullName": "Olusola E"
-  },
-  {
-    "id": "B1WZqVSuv",
-    "password": "$argon2i$v=19$m=4096,t=3,p=1$WaaUGpZ1D582//UBvL5Iaw$WU8tz/Mo22aH82BbkBD6/LxUjATz0fJmL0h6nB+6PqQ",
-    "email": "ebzealgg@yahoo.com",
-    "userName": "oluEg",
-    "fullName": "Olusola E"
-  },
-  {
-    "id": "B1kX54S_D",
-    "password": "$argon2i$v=19$m=4096,t=3,p=1$xRNEqp/9J15sVZdyeFCoGA$WH34o0+cDRKp9s9BO7StSZ/p3xj7PavPPNCq5tDsh2g",
-    "email": "ebzealggr@yahoo.com",
-    "userName": "oluEgr",
-    "fullName": "Olusola E"
+    "userName": "olu",
+    "fullName": "Olusola Ajayi"
   }
 ]

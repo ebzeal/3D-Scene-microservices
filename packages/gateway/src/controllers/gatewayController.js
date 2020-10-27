@@ -55,7 +55,6 @@ class GatewayController {
    * @description fetches a User from the db
    */
   static async getUser(_, { id }, context) {
-    console.log('getUser -> id', id);
     try {
       const isUser = await axios.get(`${identityURL}/user/${id}`, {headers:{'authorization': context.headers.authorization}});
       const data = isUser.data.data.payload;
