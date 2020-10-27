@@ -7,6 +7,16 @@ export const logInQuery = gql`
 }
 `;
 
+export const getUserQuery = gql`
+  query GetUserQuery($id:ID!) {
+  showUser(id: $id){
+    userName
+    fullName
+    email
+  }
+}
+`;
+
 export const signUpMutation = gql`
   mutation CreateUser($input: CreateUserInput) {
   access_token: createUser(input: $input)

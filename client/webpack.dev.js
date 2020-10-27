@@ -56,7 +56,7 @@ module.exports = {
     ]
   },
   devServer: {
-    port: 6000,
+    port: 4500,
     historyApiFallback: {
       disableDotRule: true
     }
