@@ -30,6 +30,7 @@ type Shape {
   geopoints: String
   texture: String
   speed: String
+  geometry:String
 }
 
 input CreateUserInput { 

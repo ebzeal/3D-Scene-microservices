@@ -5,25 +5,30 @@ import {SceneDiv} from './Scene.styles';
 
 class Scene extends Component {
   componentDidMount() {
-  let scene, camera, renderer, cube, sphere;
-  let ADD = 0.005;
+    const { shape } = this.props;
+    const {name, geopoints, texture, speed, geometry} = shape;
+  let scene, camera, renderer, theShape;
+  let SPEED = parseFloat(speed);
+  let setGeometry ;
+  switch (name) {
+    case 'circle':
+      setGeometry = new THREE.CircleGeometry(5,70,70)
+      break;
+    case 'square':
+      setGeometry = new THREE.BoxGeometry(12,12,12)
+    default:
+      null
+      break;
+  }
   
-  let createGeometry = function() {
-     
-    // let texture = new THREE.TextureLoader().load( 'https://res.cloudinary.com/dxehksqg1/image/upload/v1603815298/wood-1866661_1280_e4u0zk.jpg');
-    let texture = new THREE.TextureLoader().load( 'https://res.cloudinary.com/dxehksqg1/image/upload/v1603823389/confectioners/Vendors/earth-11595_1280_wxatbo.jpg');
+  let createGeometry = function(setGeometry, image) {
+     let texture = new THREE.TextureLoader().load( `${image}`);
       
       let material =  new THREE.MeshBasicMaterial({map: texture});
                   
-      // let geometry = new THREE.BoxGeometry(12,12,12);
-      // let geometry = new THREE.CircleGeometry(5,70,70);
-      let geometry = new THREE.SphereGeometry(5,70,70);
-     
-      cube = new THREE.Mesh(geometry, material);
-      sphere = new THREE.Mesh(geometry, material);
+      theShape = new THREE.Mesh(setGeometry, material);
        
-      // scene.add(cube); 
-      scene.add(sphere); 
+      scene.add(theShape); 
       
   };
   
@@ -45,7 +50,7 @@ class Scene extends Component {
       scene.add(lightDown);
       scene.add(lightUp);
 
-      createGeometry();
+      createGeometry(setGeometry, texture);
       
       renderer = new THREE.WebGLRenderer();   
       renderer.setSize(window.innerWidth, window.innerHeight);
@@ -53,10 +58,8 @@ class Scene extends Component {
       
   
   let mainLoop = function() {
-    cube.rotation.x += ADD;
-    cube.rotation.y += ADD;
-    sphere.rotation.x += ADD;
-    sphere.rotation.y += ADD;
+    theShape.rotation.x += SPEED;
+    theShape.rotation.y += SPEED;
      
       renderer.render(scene, camera);
       requestAnimationFrame(mainLoop);

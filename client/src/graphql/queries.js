@@ -17,6 +17,30 @@ export const getUserQuery = gql`
 }
 `;
 
+export const dashboardQuery = gql`
+  query DashboardQuery{
+  dashboard: getDashboard {
+    views
+    clicks
+    objects
+    animated
+  }
+}
+`;
+
+export const shapeQuery = gql`
+  query ShapeQuery($shapeName: String) {
+  shape:getShape(shapeName: $shapeName){
+    id
+    name
+    geopoints
+    texture
+    speed
+    geometry
+  }
+}
+`;
+
 export const signUpMutation = gql`
   mutation CreateUser($input: CreateUserInput) {
   access_token: createUser(input: $input)
