@@ -16,7 +16,7 @@ const Dashboard = ({handleLogOut, userToken}) => {
   return (
   <DashboardPage>
     {loading ? '...' : <HeaderBar handleLogOut={handleLogOut} user={data.showUser} />  }
-    <DashboardMain />
+    <DashboardMain userId={id} />
   </DashboardPage>
  )
 }

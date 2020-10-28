@@ -14,5 +14,16 @@ const DashboardMainDiv = styled.div`
   }
 `;
 
+const EmptyScene = styled.div`
+  background-color: #FBFBFB;
+  min-width:50%;
+`;
 
-export {DashboardMainDiv}
+const TopCards = styled.div`
+  background-color: rgba(224, 224, 224, 0.8);
+  padding:15px 5px 15px 85px;
+  margin: 0px auto;
+`;
+
+
+export {DashboardMainDiv, EmptyScene, TopCards}

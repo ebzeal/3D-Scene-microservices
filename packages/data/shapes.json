@@ -4,6 +4,15 @@
     "name": "circle",
     "geopoints": "5,70,70",
     "texture": "https://res.cloudinary.com/dxehksqg1/image/upload/v1603823389/confectioners/Vendors/earth-11595_1280_wxatbo.jpg",
-    "speed": "0.005"
+    "speed": "0.05",
+    "geometry": "new THREE.SphereGeometry(5,70,70)"
+  },
+  {
+    "id": "AllyGor_v",
+    "name": "square",
+    "geopoints": "12,12,12",
+    "texture": "https://res.cloudinary.com/dxehksqg1/image/upload/v1603815298/wood-1866661_1280_e4u0zk.jpg",
+    "speed": "0.005",
+    "geometry": "new THREE.BoxGeometry(12,12,12)"
   }
 ]
